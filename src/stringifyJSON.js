@@ -7,6 +7,7 @@ var stringifyJSON = function(obj) {
   // your code goes here
   //check if obj is boolean, number, string, array, obj
   var str = '';
+  var remove = 'later';
   if (typeof obj === 'string') {
     str += '\"' + obj.toString() + '\"';
     return str;
