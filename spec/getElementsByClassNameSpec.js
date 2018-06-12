@@ -21,7 +21,7 @@ describe('getElementsByClassName', function() {
       var expectedArray = Array.prototype.slice.apply(expectedNodeList);
       var equality = _.isEqual(result, expectedArray); // why can't we use `===` here? Because equal objects won't 
       //evaluate to equal. You would need to stringify both objects to check equality.
-      expect(equality).to.equal(result);
+      expect(equality).to.equal(true);
 
       $rootElement.remove();
     });
